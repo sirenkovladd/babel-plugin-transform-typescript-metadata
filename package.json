@@ -1,10 +1,13 @@
 {
   "name": "@sirenko/babel-plugin-transform-typescript-metadata",
-  "version": "0.3.2+fix-reflect",
+  "version": "0.3.2-fix-reflect",
   "description": "Babel plugin to emit decorator metadata like typescript compiler",
   "main": "lib/plugin.js",
   "types": "lib/plugin.d.ts",
-  "repository": "https://github.com/sirenkovladd/babel-plugin-transform-typescript-metadata.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirenkovladd/babel-plugin-transform-typescript-metadata.git"
+  },
   "author": "Leonardo Ascione <leonardo.ascione@gmail.com>",
   "maintainers": [
     "Sirenko Vlad <sirenkovladd@gmail.com>"
