@@ -1,11 +1,14 @@
 {
-  "name": "babel-plugin-transform-typescript-metadata",
-  "version": "0.3.2",
+  "name": "@sirenko/babel-plugin-transform-typescript-metadata",
+  "version": "0.3.2+fix-reflect",
   "description": "Babel plugin to emit decorator metadata like typescript compiler",
   "main": "lib/plugin.js",
   "types": "lib/plugin.d.ts",
-  "repository": "https://github.com/leonardfactory/babel-plugin-transform-typescript-metadata.git",
+  "repository": "https://github.com/sirenkovladd/babel-plugin-transform-typescript-metadata.git",
   "author": "Leonardo Ascione <leonardo.ascione@gmail.com>",
+  "maintainers": [
+    "Sirenko Vlad <sirenkovladd@gmail.com>"
+  ],
   "license": "MIT",
   "files": [
     "lib/"
@@ -29,26 +32,6 @@
     "test:dev": "jest --watch",
     "test:ci": "jest --ci --runInBand --coverage --forceExit"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "emoji-commit-lint"
-    }
-  },
-  "release-it": {
-    "git": {
-      "tagName": "v${version}",
-      "commitMessage": "🔖 v${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "@favoloso/emoji",
-        "infile": "CHANGELOG.md"
-      }
-    }
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -71,7 +54,6 @@
     "husky": "^4.2.3",
     "jest": "^27.5.1",
     "jest-file-snapshot": "^0.5.0",
-    "release-it": "13.7.1",
     "rimraf": "^3.0.2",
     "typescript": "^3.6.4"
   },
